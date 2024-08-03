@@ -1,0 +1,5 @@
+- parts repair kits can repair lower condition parts, not just 60% and up
+- Edit parts repair descriptions to specify WHICH parts they can repair
+    - multitool for springs and triggers, etc
+- lower part repair costs, but lower repair gain?
+- With parts repair kits, use other parts of the same kind, or exact same parts, as repair bonuses
