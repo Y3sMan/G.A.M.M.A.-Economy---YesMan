@@ -3,14 +3,14 @@
 #include "presets\gamma_wp_preset.ltx"
 
 [trader]
-buy_condition = trade_generic_buy
+buy_condition =  trade_generic_buy
 sell_condition = trade_generic_sell
 buy_supplies = {=actor_goodwill_ge(stalker:2000)} supplies_5, {=heavy_pockets_functor()} supplies_5, {=actor_goodwill_ge(dolg:2000)} supplies_5, {=actor_goodwill_ge(stalker:1500)} supplies_4, {=actor_goodwill_ge(dolg:1500)} supplies_4, {=actor_goodwill_ge(stalker:1000)} supplies_3, {=actor_goodwill_ge(dolg:1000)} supplies_3, {=actor_goodwill_ge(stalker:500)} supplies_2, {=actor_goodwill_ge(dolg:500)} supplies_2, supplies_1
-buy_item_condition_factor = 0.50
+buy_item_condition_factor = 0.30
 buy_item_exponent = 2.25
 sell_item_exponent = 0.75
 
-discounts = discount_trasher
+discounts = discount_owl
 
 [trade_generic_buy]:trasher,furnitures_low
 
@@ -45,9 +45,9 @@ ammo_7.62x25_p                 = 10, 1
 ammo_7.62x25_ps                = 10, 1
 ammo_20x70_buck                = 8, 1
 
-;[Melee]
-wpn_knife                            = 1, 1
-wpn_knife2                           = 1, 1
+;[melee]                
+wpn_knife               = 1, 1
+wpn_knife2              = 1, 1
 
 ;[Backpacks]
 itm_backpack                         = 1, 1
@@ -127,7 +127,7 @@ itm_tent                             = 1, 1
 [supplies_2]:supplies_1,supply_2_wp
 
 af_iam                               = 1, 1
-af_camelbak                          = 1, 1
+af_camelbak		= 1, 1
 af_cooler                            = 1, 1
 af_frames                            = 1, 1
 af_freon                             = 1, 1
@@ -141,8 +141,8 @@ ammo_7.92x33_ap                      = 4, 1
 ammo_9x21_sp10                       = 6, 1
 ammo_12.7x55_fmj                     = 4, 1
 
-;[Melee]
-wpn_knife3                           = 1, 1
+;[melee]
+wpn_knife3              = 1, 1
 wpn_axe                              = 1, 1
 
 ;[Backpacks]
@@ -166,8 +166,8 @@ ammo_12.7x55_fmj                     = 6, 1
 grenade_rgd5                         = 1, 1
 ied_rpg_new                          = 1, 1
 
-;[Melee]
-wpn_knife4                           = 1, 1
+;[melee]
+wpn_knife4              = 1, 1
 
 ;[Headgear]
 helm_metro                           = 1, 1
@@ -178,7 +178,7 @@ light_loner_outfit                   = 1, 1
 
 ;[Backpacks]
 
-;[Devices]
+;[devices]
 
 [supplies_4]:supplies_3,supply_4_wp
 
