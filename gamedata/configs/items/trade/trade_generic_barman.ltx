@@ -4,19 +4,20 @@
 [trader]
 buy_condition = trade_generic_buy
 sell_condition = trade_generic_sell
-buy_supplies = {=actor_goodwill_ge(stalker:2000)} supplies_5, {=heavy_pockets_functor()} supplies_5, {=actor_goodwill_ge(stalker:1500)} supplies_4, {=actor_goodwill_ge(stalker:1000)} supplies_3, {=actor_goodwill_ge(stalker:500)} supplies_2,  supplies_1
-buy_item_condition_factor = 0.10
-buy_item_exponent = 0.80
+buy_supplies = supplies_1
+buy_item_condition_factor = 0.50
+buy_item_exponent = 2.25
 sell_item_exponent = 0.75
 
 discounts = discount_barman
 
 [trade_generic_buy]:barman,furnitures_low
 
-
 [trade_generic_sell]:barman
 
 [supplies_1]:common_stock
+
+;[Cigs/Food/Drinks]
 ;meat_bloodsucker                     = 3, 1
 ;meat_bloodsucker_a                   = 1, 1
 ;meat_bloodsucker_b                   = 2, 1
@@ -95,12 +96,6 @@ kerosene                             = 2, 1
 charcoal                             = 2, 1
 explo_jerrycan_fuel                  = 1, 1
 explo_balon_gas                      = 1, 1
-
-;[drugs]
-
-medkit			= 3, 1
-bandage			= 4, 1
-antirad			= 2, 1
 
 ;[Camping]
 cooking                              = 2, 1

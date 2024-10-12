@@ -6,7 +6,7 @@ has_parts 			= arti_jamming.has_parts
 TraderAuto = trader_autoinject.update
 function trader_autoinject.update(npc)
     TraderAuto(npc)
-    -- add_parts(npc) -- you define this function ok
+    add_parts(npc) -- you define this function ok
 end
 
 local BASE_AMT = 15
@@ -42,6 +42,7 @@ function add_parts(npc)
 		trader_autoinject.spawn_items(npc, table, true)
 	end
 end
+
 function on_game_start()
     
     local prices = ini_file("items\\settings\\part_prices.ltx")

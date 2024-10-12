@@ -1,54 +1,55 @@
 #include "presets\trade_discounts.ltx"
 #include "presets\trade_presets.ltx"
+#include "presets\gamma_wp_preset.ltx"
 
 [trader]
-buy_condition =  trade_generic_buy
+buy_condition = trade_generic_buy
 sell_condition = trade_generic_sell
 buy_supplies = {=actor_goodwill_ge(stalker:2000)} supplies_5, {=heavy_pockets_functor()} supplies_5, {=actor_goodwill_ge(stalker:1500)} supplies_4, {=actor_goodwill_ge(stalker:1000)} supplies_3, {=actor_goodwill_ge(stalker:500)} supplies_2,  supplies_1
-buy_item_condition_factor = 0.30
+buy_item_condition_factor = 0.50
 buy_item_exponent = 2.25
 sell_item_exponent = 0.75
 
-discounts = discount_sidorovich
+discounts = discount_trasher
 
 [trade_generic_buy]:trasher,furnitures_low
 
 [trade_generic_sell]:trasher
-adrenalin                            = 2, 0.40
-akvatab                              = 2, 0.40
-analgetic                            = 2, 0.40
-antibio_chlor                        = 2, 0.40
-antibio_sulfad                       = 2, 0.40
-antiemetic                           = 2, 0.40
-antirad                              = 2, 0.40
-antirad_cystamine                    = 2, 0.40
-antirad_kalium                       = 4, 0.40
-bandage                              = 4, 1
-caffeine                             = 2, 0.40
-cocaine                              = 2, 0.40
-drug_anabiotic                       = 2, 0.40
-drug_antidot                         = 2, 0.40
-drug_booster                         = 2, 0.40
-drug_coagulant                       = 2, 0.40
-drug_psy_blockade                    = 2, 0.40
-drug_radioprotector                  = 2, 0.40
-drug_sleepingpills                   = 2, 0.40
-glucose                              = 2, 0.40
-glucose_s                            = 2, 0.40
-jgut                                 = 2, 0.40
-medkit                               = 3, 0.40
-medkit_ai1                           = 3, 0.40
-medkit_ai2                           = 3, 0.40
-medkit_ai3                           = 2, 0.40
-medkit_army                          = 2, 0.40
-medkit_scientic                      = 2, 0.40
-morphine                             = 2, 0.40
-salicidic_acid                       = 2, 0.40
-stimpack                             = 2, 0.40
-stimpack_army                        = 2, 0.40
-stimpack_scientic                    = 2, 0.40
-tetanus                              = 2, 0.40
-yadylin                              = 2, 0.40
+adrenalin                            = 0.83,0.83
+akvatab                              = 0.83,0.83
+analgetic                            = 0.83,0.83
+antibio_chlor                        = 0.83,0.83
+antibio_sulfad                       = 0.83,0.83
+antiemetic                           = 0.83,0.83
+antirad                              = 0.83,0.83
+antirad_cystamine                    = 0.83,0.83
+antirad_kalium                       = 0.83,0.83
+bandage                              = 0.83,0.83
+caffeine                             = 0.83,0.83
+cocaine                              = 0.83,0.83
+drug_anabiotic                       = 0.83,0.83
+drug_antidot                         = 0.83,0.83
+drug_booster                         = 0.83,0.83
+drug_coagulant                       = 0.83,0.83
+drug_psy_blockade                    = 0.83,0.83
+drug_radioprotector                  = 0.83,0.83
+drug_sleepingpills                   = 0.83,0.83
+glucose                              = 0.83,0.83
+glucose_s                            = 0.83,0.83
+jgut                                 = 0.83,0.83
+medkit                               = 0.83,0.83
+medkit_ai1                           = 0.83,0.83
+medkit_ai2                           = 0.83,0.83
+medkit_ai3                           = 0.83,0.83
+medkit_army                          = 0.83,0.83
+medkit_scientic                      = 0.83,0.83
+morphine                             = 0.83,0.83
+salicidic_acid                       = 0.83,0.83
+stimpack                             = 0.83,0.83
+stimpack_army                        = 0.83,0.83
+stimpack_scientic                    = 0.83,0.83
+tetanus                              = 0.83,0.83
+yadylin                              = 0.83,0.83
 ammo_7.62x25_ps                      = 0.75,0.75
 ammo_pkm_100                         = 0.75,0.75
 
@@ -216,7 +217,7 @@ af_freon                             = 1, 1
 af_grid                              = 1, 1
 af_surge                             = 1, 1
 
-;[ammo]
+;[Ammo]
 ammo_9x19_ap                         = 7, 1
 ammo_12x76_zhekan                    = 7, 1
 ammo_357_hp_mag                      = 8, 1
@@ -230,7 +231,7 @@ wpn_axe                              = 1, 1
 
 ;[Backpacks]
 
-;[devices]
+;[Devices]
 
 rakurs                     = 1, 1     ;BaS
 upg220                     = 1, 1     ;BaS
@@ -239,7 +240,7 @@ upg220                     = 1, 1     ;BaS
 
 af_aac                               = 1, 1
 
-;[ammo]
+;[Ammo]
 ammo_9x21_sp10                       = 10, 1
 ammo_5.45x39_ep                      = 6, 1
 ammo_5.45x39_fmj                     = 8, 1
@@ -254,12 +255,12 @@ wpn_knife4                           = 1, 1
 
 ;[Backpacks]
 
-;[devices]
+;[Devices]
 
 [supplies_4]:supplies_3,supply_4_wp
 
 wpn_axe3                             = 1, 1
-;[ammo]
+;[Ammo]
 ammo_5.45x39_ap                      = 7, 1
 ammo_9x39_pab9                       = 10, 1
 ammo_7.62x54_7h14                    = 4, 1
@@ -273,14 +274,14 @@ wpn_knife5                           = 1, 1
 
 ;[Backpacks]
 
-;[devices]
+;[Devices]
 
 [supplies_5]:supplies_4,supply_5_wp
 
 batteries_exo = 4,1
 af_aam                               = 1, 1
 
-;[ammo]
+;[Ammo]
 ammo_12.7x55_ap                      = 5, 1
 ammo_7.62x39_ap                      = 7, 1
 ammo_9x39_ap                       = 9, 1
