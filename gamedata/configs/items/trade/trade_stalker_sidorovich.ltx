@@ -2,255 +2,256 @@
 #include "presets\trade_presets.ltx"
 
 [trader]
-buy_condition =  trade_generic_buy
-sell_condition = trade_generic_sell
-buy_supplies = {=actor_goodwill_ge(stalker:2000)} supplies_5, {=heavy_pockets_functor()} supplies_5, {=actor_goodwill_ge(stalker:1500)} supplies_4, {=actor_goodwill_ge(stalker:1000)} supplies_3, {=actor_goodwill_ge(stalker:500)} supplies_2,  supplies_1
-buy_item_condition_factor = 0.30
-buy_item_exponent = 2.25
-sell_item_exponent = 0.75
+	buy_condition =  trade_generic_buy
+	sell_condition = trade_generic_sell
+	buy_supplies = {=actor_goodwill_ge(stalker:2000)} supplies_5, {=heavy_pockets_functor()} supplies_5, {=actor_goodwill_ge(stalker:1500)} supplies_4, {=actor_goodwill_ge(stalker:1000)} supplies_3, {=actor_goodwill_ge(stalker:500)} supplies_2,  supplies_1
+	buy_item_condition_factor = 0.30
+	buy_item_exponent = 2.25
+	sell_item_exponent = 0.75
 
-discounts = discount_sidorovich
+	discounts = discount_sidorovich
 
 [trade_generic_buy]:trasher,furnitures_low
 
 [trade_generic_sell]:trasher
-adrenalin                            = 2, 0.40
-akvatab                              = 2, 0.40
-analgetic                            = 2, 0.40
-antibio_chlor                        = 2, 0.40
-antibio_sulfad                       = 2, 0.40
-antiemetic                           = 2, 0.40
-antirad                              = 2, 0.40
-antirad_cystamine                    = 2, 0.40
-antirad_kalium                       = 4, 0.40
-bandage                              = 4, 1
-caffeine                             = 2, 0.40
-cocaine                              = 2, 0.40
-drug_anabiotic                       = 2, 0.40
-drug_antidot                         = 2, 0.40
-drug_booster                         = 2, 0.40
-drug_coagulant                       = 2, 0.40
-drug_psy_blockade                    = 2, 0.40
-drug_radioprotector                  = 2, 0.40
-drug_sleepingpills                   = 2, 0.40
-glucose                              = 2, 0.40
-glucose_s                            = 2, 0.40
-jgut                                 = 2, 0.40
-medkit                               = 3, 0.40
-medkit_ai1                           = 3, 0.40
-medkit_ai2                           = 3, 0.40
-medkit_ai3                           = 2, 0.40
-medkit_army                          = 2, 0.40
-medkit_scientic                      = 2, 0.40
-morphine                             = 2, 0.40
-salicidic_acid                       = 2, 0.40
-stimpack                             = 2, 0.40
-stimpack_army                        = 2, 0.40
-stimpack_scientic                    = 2, 0.40
-tetanus                              = 2, 0.40
-yadylin                              = 2, 0.40
-ammo_7.62x25_ps                      = 0.75,0.75
-ammo_pkm_100                         = 0.75,0.75
+	adrenalin                            = 2, 0.40
+	akvatab                              = 2, 0.40
+	analgetic                            = 2, 0.40
+	antibio_chlor                        = 2, 0.40
+	antibio_sulfad                       = 2, 0.40
+	antiemetic                           = 2, 0.40
+	antirad                              = 2, 0.40
+	antirad_cystamine                    = 2, 0.40
+	antirad_kalium                       = 4, 0.40
+	bandage                              = 4, 1
+	caffeine                             = 2, 0.40
+	cocaine                              = 2, 0.40
+	drug_anabiotic                       = 2, 0.40
+	drug_antidot                         = 2, 0.40
+	drug_booster                         = 2, 0.40
+	drug_coagulant                       = 2, 0.40
+	drug_psy_blockade                    = 2, 0.40
+	drug_radioprotector                  = 2, 0.40
+	drug_sleepingpills                   = 2, 0.40
+	glucose                              = 2, 0.40
+	glucose_s                            = 2, 0.40
+	jgut                                 = 2, 0.40
+	medkit                               = 3, 0.40
+	medkit_ai1                           = 3, 0.40
+	medkit_ai2                           = 3, 0.40
+	medkit_ai3                           = 2, 0.40
+	medkit_army                          = 2, 0.40
+	medkit_scientic                      = 2, 0.40
+	morphine                             = 2, 0.40
+	salicidic_acid                       = 2, 0.40
+	stimpack                             = 2, 0.40
+	stimpack_army                        = 2, 0.40
+	stimpack_scientic                    = 2, 0.40
+	tetanus                              = 2, 0.40
+	yadylin                              = 2, 0.40
+	ammo_7.62x25_ps                      = 0.75,0.75
+	ammo_pkm_100                         = 0.75,0.75
 
 
 [supplies_1]:common_stock,supply_1_wp
 
-wpn_binoc_inv                        = 1, 1
+	wpn_binoc_inv                        = 1, 1
 
 ;[Ammo]
-ammo_11.43x23_fmj              = 8, 1
-ammo_11.43x23_hydro            = 8, 1
-ammo_9x18_ap                   = 8, 1
-ammo_9x18_fmj                  = 8, 1
-ammo_9x18_pmm                  = 7, 1
-ammo_9x19_fmj                  = 8, 1
-ammo_9x19_pbp                  = 7, 1
-ammo_7.62x39_fmj               = 5, 1
-ammo_7.92x33_fmj               = 2, 1
-ammo_12x70_buck                = 8, 1
-ammo_7.62x25_p                 = 10, 1
-ammo_7.62x25_ps                = 10, 1
-ammo_20x70_buck                = 8, 1
+	ammo_11.43x23_fmj              = 16, 0.50
+	ammo_11.43x23_hydro            = 16, 0.50
+	ammo_9x18_ap                   = 16, 0.50
+	ammo_9x18_fmj                  = 16, 0.50
+	ammo_9x18_pmm                  = 14, 0.50
+	ammo_9x19_fmj                  = 16, 0.50
+	ammo_9x19_pbp                  = 14, 0.50
+	ammo_7.62x39_fmj               = 10, 0.50
+	ammo_7.92x33_fmj               = 4, 0.50
+	ammo_12x70_buck                = 16, 0.50
+	ammo_7.62x25_p                 = 20, 0.50
+	ammo_7.62x25_ps                = 20, 0.50
+	ammo_20x70_buck                = 16, 0.50
 
 ;[Melee]
-wpn_knife                            = 1, 1
-wpn_knife2                           = 1, 1
+	wpn_knife                            = 1, 0.50
+	wpn_knife2                           = 1, 0.50
 
 ;[Backpacks]
-itm_backpack                         = 1, 1
-kit_hunt                             = 1, 1
+	itm_backpack                         = 1, 1
+	kit_hunt                             = 1, 1
 
 ;[Drugs/Medicine]
-akvatab                              = 1, 1
-analgetic                            = 2, 1
-antibio_chlor                        = 1, 1
-antibio_sulfad                       = 1, 1
-antiemetic                           = 1, 1
-antirad                              = 1, 1
-antirad_cystamine                    = 1, 1
-antirad_kalium                       = 1, 1
-bandage                              = 3, 1
-caffeine                             = 1, 1
-drug_anabiotic                       = 1, 1
-drug_antidot                         = 1, 1
-drug_booster                         = 2, 1
-drug_coagulant                       = 1, 1
-drug_psy_blockade                    = 1, 1
-drug_radioprotector                  = 1, 1
-drug_sleepingpills                   = 1, 1
-glucose                              = 1, 1
-glucose_s                            = 1, 1
-jgut                                 = 1, 1
-medkit                               = 2, 1
-medkit_army                          = 2, 1
-salicidic_acid                       = 1, 1
-stimpack                             = 2, 1
-stimpack_army                        = 1, 1
-tetanus                              = 1, 1
-yadylin                              = 2, 1
+	akvatab                              = 2, 0.40
+	analgetic                            = 3, 0.40
+	antibio_chlor                        = 2, 0.40
+	antibio_sulfad                       = 2, 0.40
+	antiemetic                           = 2, 0.40
+	antirad                              = 2, 0.40
+	antirad_cystamine                    = 2, 0.40
+	antirad_kalium                       = 2, 0.40
+	bandage                              = 4, 1
+	caffeine                             = 2, 0.40
+	drug_anabiotic                       = 1, 0.40
+	drug_antidot                         = 1, 0.40
+	drug_booster                         = 2, 0.40
+	drug_coagulant                       = 2, 0.40
+	drug_psy_blockade                    = 1, 0.40
+	drug_radioprotector                  = 1, 0.40
+	drug_sleepingpills                   = 1, 0.40
+	glucose                              = 1, 0.40
+	glucose_s                            = 1, 0.40
+	jgut                                 = 1, 0.40
+	medkit                               = 2, 0.40
+	medkit_army                          = 2, 0.40
+	salicidic_acid                       = 1, 0.40
+	stimpack                             = 2, 0.40
+	stimpack_army                        = 1, 0.40
+	tetanus                              = 1, 0.40
+	yadylin                              = 2, 0.40
 
 ;[Cigs/Food/Drinks]
-beans                                = 2, 1
-bread                                = 4, 1
-breadold                             = 6, 1
-chili                                = 2, 1
-chocolate                            = 2, 1
-conserva                             = 4, 1
-corn                                 = 2, 1
-kolbasa                              = 4, 1
-mre                                  = 1, 1
-nuts                                 = 2, 1
-protein                              = 2, 1
-raisins                              = 2, 1
-ration_ru                            = 1, 1
-ration_ukr                           = 1, 1
-salmon                               = 2, 1
-sausage                              = 2, 1
-tomato                               = 2, 1
-tushonka                             = 4, 1
+	beans                                = 2, 0.40
+	bread                                = 4, 0.40
+	breadold                             = 6, 0.40
+	chili                                = 2, 0.40
+	chocolate                            = 2, 0.40
+	conserva                             = 4, 0.40
+	corn                                 = 2, 0.40
+	kolbasa                              = 4, 0.40
+	mre                                  = 1, 0.40
+	nuts                                 = 2, 0.40
+	protein                              = 2, 0.40
+	raisins                              = 2, 0.40
+	ration_ru                            = 1, 0.40
+	ration_ukr                           = 1, 0.40
+	salmon                               = 2, 0.40
+	sausage                              = 2, 0.40
+	tomato                               = 2, 0.40
+	tushonka                             = 4, 0.40
 ;---
-beer                                 = 3, 1
-bottle_metal                         = 2, 1
-drink_crow                           = 2, 1
-energy_drink                         = 3, 1
-flask                                = 2, 1
-mineral_water                        = 2, 1
-tea                                  = 2, 1
-vodka                                = 1, 1
-vodka2                               = 1, 1
-vodka_quality                        = 1, 1
-water_drink                          = 2, 1
+
+	beer                                 = 3, 0.40
+	bottle_metal                         = 2, 0.40
+	drink_crow                           = 2, 0.40
+	energy_drink                         = 3, 0.40
+	flask                                = 2, 0.40
+	mineral_water                        = 2, 0.40
+	tea                                  = 2, 0.40
+	vodka                                = 1, 0.40
+	vodka2                               = 1, 0.40
+	vodka_quality                        = 1, 0.40
+	water_drink                          = 2, 0.40
 ;---
-cigar                                = 2, 1
-cigar1                               = 2, 1
-cigar2                               = 2, 1
-cigar3                               = 2, 1
-cigarettes                           = 4, 1
-cigarettes_lucky                     = 3, 1
-cigarettes_russian                   = 3, 1
-tobacco                              = 2, 1
-hand_rolling_tobacco                 = 2, 1
-box_matches                          = 3, 1
+	cigar                                = 2, 0.70
+	cigar1                               = 2, 0.70
+	cigar2                               = 2, 0.70
+	cigar3                               = 2, 0.70
+	cigarettes                           = 4, 0.70
+	cigarettes_lucky                     = 3, 0.70
+	cigarettes_russian                   = 3, 0.70
+	tobacco                              = 2, 0.70
+	hand_rolling_tobacco                 = 2, 0.70
+	box_matches                          = 3, 1
 
 ;[Fuels]
-kerosene                             = 2, 1
-charcoal                             = 2, 1
-explo_jerrycan_fuel                  = 1, 1
-explo_balon_gas                      = 1, 1
+	kerosene                             = 2, 1
+	charcoal                             = 2, 1
+	explo_jerrycan_fuel                  = 1, 1
+	explo_balon_gas                      = 1, 1
 
 ;[Devices]
-batteries_dead                       = 5, 1
-detector_geiger                      = 2, 1
-detector_radio                       = 2, 1
-detector_simple                      = 2, 1
-device_flashlight                    = 1, 1
-device_pda_1                         = 1, 1
-device_torch_dummy                   = 1, 1
-lead_box                             = 2, 1
+	batteries_dead                       = 5, 0.50
+	detector_geiger                      = 2, 1
+	detector_radio                       = 2, 1
+	detector_simple                      = 2, 1
+	device_flashlight                    = 1, 0.50
+	device_pda_1                         = 1, 1
+	device_torch_dummy                   = 1, 0.50
+	lead_box                             = 2, 0.50
 
 ;[Trash]
-cards                                = 2, 1
-guitar_a                             = 1, 1
-harmonica_a                          = 1, 1
+	cards                                = 4, 0.40
+	guitar_a                             = 3, 0.40
+	harmonica_a                          = 3, 0.40
 ;---
-ball_hammer                          = 2, 1
-beadspread                           = 1, 1
-boots                                = 1, 1
-broken_detector                      = 1, 1
-cards                                = 2, 1
-flashlight_broken                    = 1, 1
-gloves                               = 1, 1
-hand_watch                           = 1, 1
-headlamp                             = 1, 1
-mirror                               = 2, 1
-porn                                 = 1, 1
-porn2                                = 1, 1
-radio                                = 1, 1
-radio2                               = 2, 1
-rope                                 = 1, 1
-shovel_mili                          = 1, 1
-shovel_old                           = 1, 1
-synthrope                            = 2, 1
-tarpaulin                            = 1, 1
-underwear                            = 1, 1
-walkie                               = 2, 1
-welding_goggles                      = 1, 1
+	ball_hammer                          = 4, 0.40
+	beadspread                           = 3, 0.40
+	boots                                = 3, 0.40
+	broken_detector                      = 3, 0.40
+	cards                                = 4, 0.40
+	flashlight_broken                    = 3, 0.40
+	gloves                               = 3, 0.40
+	hand_watch                           = 3, 0.40
+	headlamp                             = 3, 0.40
+	mirror                               = 4, 0.40
+	porn                                 = 3, 0.40
+	porn2                                = 3, 0.40
+	radio                                = 3, 0.40
+	radio2                               = 4, 0.40
+	rope                                 = 3, 0.40
+	shovel_mili                          = 3, 0.40
+	shovel_old                           = 3, 0.40
+	synthrope                            = 4, 0.40
+	tarpaulin                            = 3, 0.40
+	underwear                            = 3, 0.40
+	walkie                               = 4, 0.40
+	welding_goggles                      = 3, 0.40
 
 ;[Camping]
-cooking                              = 1, 1
+	cooking                              = 1, 0.50
 
-fieldcooker                          = 1, 1
-bolts_pack                           = 4, 1
-compression_bag                      = 1, 1
-itm_actor_backpack                   = 1, 1
-itm_sleepbag                         = 1, 1
-itm_tent                             = 1, 1
+	fieldcooker                          = 1, 0.50
+	bolts_pack                           = 4, 0.50
+	compression_bag                      = 1, 0.50
+	itm_actor_backpack                   = 1, 0.50
+	itm_sleepbag                         = 1, 0.50
+	itm_tent                             = 1, 0.50
 
 [supplies_2]:supplies_1,supply_2_wp
 
-af_iam                               = 1, 1
-af_camelbak                          = 1, 1
-af_cooler                            = 1, 1
-af_frames                            = 1, 1
-af_freon                             = 1, 1
-af_grid                              = 1, 1
-af_surge                             = 1, 1
+	af_iam                               = 1, 1
+	af_camelbak                          = 1, 1
+	af_cooler                            = 1, 1
+	af_frames                            = 1, 1
+	af_freon                             = 1, 1
+	af_grid                              = 1, 1
+	af_surge                             = 1, 1
 
 ;[ammo]
-ammo_9x19_ap                         = 7, 1
-ammo_12x76_zhekan                    = 7, 1
-ammo_357_hp_mag                      = 8, 1
-ammo_7.92x33_ap                      = 4, 1
-ammo_9x21_sp10                       = 6, 1
-ammo_12.7x55_fmj                     = 4, 1
+	ammo_9x19_ap                         = 14, 0.50
+	ammo_12x76_zhekan                    = 14, 0.50
+	ammo_357_hp_mag                      = 15, 0.50
+	ammo_7.92x33_ap                      = 8, 0.50
+	ammo_9x21_sp10                       = 12, 0.50
+	ammo_12.7x55_fmj                     = 8, 0.50
 
 ;[Melee]
-wpn_knife3                           = 1, 1
-wpn_axe                              = 1, 1
+	wpn_knife3                           = 1, 0.40
+	wpn_axe                              = 1, 0.40
 
 ;[Backpacks]
 
 ;[devices]
 
-rakurs                     = 1, 1     ;BaS
-upg220                     = 1, 1     ;BaS
+	rakurs                     = 1, 1     ;BaS
+	upg220                     = 1, 1     ;BaS
 
 [supplies_3]:supplies_2,supply_3_wp
 
-af_aac                               = 1, 1
+	af_aac                               = 1, 1
 
 ;[ammo]
-ammo_9x21_sp10                       = 10, 1
-ammo_5.45x39_ep                      = 6, 1
-ammo_5.45x39_fmj                     = 8, 1
-ammo_7.62x54_7h1                     = 4, 1
-ammo_23x75_shrapnel                  = 5, 1
-ammo_12.7x55_fmj                     = 6, 1
-grenade_rgd5                         = 1, 1
-ied_rpg_new                          = 1, 1
+	ammo_9x21_sp10                       = 20, 0.50
+	ammo_5.45x39_ep                      = 12, 0.50
+	ammo_5.45x39_fmj                     = 16, 0.50
+	ammo_7.62x54_7h1                     = 8, 0.50
+	ammo_23x75_shrapnel                  = 10, 0.50
+	ammo_12.7x55_fmj                     = 12, 0.50
+	grenade_rgd5                         = 1, 0.50
+	ied_rpg_new                          = 1, 1
 
 ;[Melee]
-wpn_knife4                           = 1, 1
+	wpn_knife4                           = 1, 0.50
 
 ;[Backpacks]
 
@@ -258,18 +259,18 @@ wpn_knife4                           = 1, 1
 
 [supplies_4]:supplies_3,supply_4_wp
 
-wpn_axe3                             = 1, 1
+	wpn_axe3                             = 1, 0.50
 ;[ammo]
-ammo_5.45x39_ap                      = 7, 1
-ammo_9x39_pab9                       = 10, 1
-ammo_7.62x54_7h14                    = 4, 1
-ammo_pkm_100                         = 16, 1
-ammo_og-7b                           = 1, 1
-ammo_vog-25                          = 1, 1
-ammo_vog-30                          = 1, 1
+	ammo_5.45x39_ap                      = 14, 0.50
+	ammo_9x39_pab9                       = 20, 0.50
+	ammo_7.62x54_7h14                    = 8, 0.50
+	ammo_pkm_100                         = 32, 0.50
+	ammo_og-7b                           = 2, 0.50
+	ammo_vog-25                          = 2, 0.50
+	ammo_vog-30                          = 2, 0.50
 
 ;[Melee]
-wpn_knife5                           = 1, 1
+	wpn_knife5                           = 1, 0.50
 
 ;[Backpacks]
 
@@ -277,14 +278,15 @@ wpn_knife5                           = 1, 1
 
 [supplies_5]:supplies_4,supply_5_wp
 
-batteries_exo = 4,1
-af_aam                               = 1, 1
+	batteries_exo = 4,1
+	af_aam                               = 1, 1
 
 ;[ammo]
-ammo_12.7x55_ap                      = 5, 1
-ammo_7.62x39_ap                      = 7, 1
-ammo_9x39_ap                       = 9, 1
-ammo_7.62x54_ap                      = 3, 1
-ammo_23x75_barrikada                 = 5, 1
+	ammo_12.7x55_ap                      = 10, 0.50
+	ammo_7.62x39_ap                      = 14, 0.50
+	ammo_9x39_ap                       = 18, 0.50
+	ammo_7.62x54_ap                      = 6, 0.50
+	ammo_23x75_barrikada                 = 10, 0.50
 
 ;[Backpacks]
+	
